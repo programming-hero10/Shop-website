@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+header {
+  background-image: url(pic/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 60px;
+}
+nav .logo {
+  width: 10%;
+}
+nav ul {
+  display: flex;
+  gap: 50px;
+  list-style: none;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #101010;
+  font-size: 20px;
+  background: transparent;
+  border: 2px solid #000;
+  padding: 8px 20px;
+  transition: 0.5s ease;
+}
+nav ul li a:hover {
+  background: rgb(59, 170, 209);
+  border: 2px solid rgb(59, 170, 209);
+}
+a {
+  text-decoration: none;
+  color: #101010;
+}
+.btn1 {
+  border: 2px solid rgb(59, 170, 209);
+  padding: 8px 20px;
+  background: rgb(59, 170, 209);
+  transition: 0.5s ease;
+}
+.btn1:hover {
+  padding: 8px 20px;
+  background: transparent;
+  border: 2px solid rgb(59, 170, 209);
+}
+.btn2 {
+  border: 2px solid #000;
+  margin-left: 20px;
+  padding: 8px 20px;
+  background: transparent;
+  border: 2px solid rgb(59, 170, 209);
+}
+.btn2:hover {
+  border: 2px solid rgb(59, 170, 209);
+  padding: 8px 20px;
+  background: rgb(59, 170, 209);
+  transition: 0.5s ease;
+}
+a {
+  border-radius: 20px;
+}
+.contant {
+  display: flex;
+  align-items: center;
+  gap: 90px;
+  padding-left: 80px;
+}
+.contant .text p {
+  margin-bottom: 100px;
+}
+.contant .img img {
+  width: 70%;
+}
+@media screen and (max-width: 768px) {
+  nav {
+    flex-direction: column;
+  }
+  nav ul {
+    gap: 10px;
+    margin-bottom: 30px;
+  }
+  .contant {
+    flex-direction: column;
+    padding-left: 0;
+    padding: 50px;
+    gap: 15px;
+  }
+  .contant .text h4 {
+    margin-top: 10px;
+  }
+  .contant .text p {
+    margin-bottom: 3git init0px;
+  }
+  nav .logo {
+    width: 50%;
+  }
+  nav ul li a {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+  .contant .img img {
+    width: 100%;
+  }
+}
